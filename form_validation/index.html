@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form Validation</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="validation.js" defer></script>
+  </head>
+  <body>
+    <form action="" id="form">
+      <h3>Registration</h3>
+      <div id="input-fields">
+        <label for="uname">User Name</label>
+        <input id="uname" type="text" placeholder="Enter your Name" />
+        <span id="error"></span>
+      </div>
+
+      <div id="input-fields">
+        <label for="email">Email</label>
+        <input id="email" type="text" placeholder="Enter your Email" />
+        <span id="error"></span>
+      </div>
+
+      <div id="input-fields">
+        <label for="password">Password</label>
+        <input
+          id="password"
+          type="password"
+          placeholder="Enter your Password"
+        />
+        <span id="error"></span>
+      </div>
+
+      <div id="input-fields">
+        <button id="submit" type="submit">Register</button>
+      </div>
+    </form>
+  </body>
+</html>
