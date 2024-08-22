@@ -1,0 +1,95 @@
+:root {
+  --display-control: "";
+}
+
+html,
+body {
+  position: relative;
+  margin: 0;
+  padding: 0;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-image: linear-gradient(to top, #feada6 0%, #f5efef 100%);
+}
+
+.body::after {
+  content: var(--display-control);
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(255, 255, 255, 0.85);
+  z-index: 2;
+  position: absolute;
+  filter: blur(10px);
+}
+
+#box {
+  display: grid;
+  grid-template-columns: repeat(3, 100px);
+  grid-template-rows: repeat(3, 100px);
+  gap: 2px;
+  outline: 4px solid #536976;
+  padding: 5px;
+  border-radius: 3px;
+  background-color: rgba(255, 255, 255, 0.8);
+}
+
+#cell {
+  background-color: #292e49;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#app-heading {
+  margin: -100px auto 50px auto;
+  letter-spacing: 1px;
+  font-size: 28px;
+  color: rgba(0, 0, 0, 0.5);
+}
+
+.markStyle {
+  font-size: 32px;
+  color: white;
+}
+
+#choice {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  width: 400px;
+  height: 200px;
+  background-color: rgba(41, 30, 30, 0.8);
+  z-index: 3;
+}
+
+#btns {
+  display: flex;
+  justify-content: space-around;
+}
+
+#o,
+#x {
+  width: 100px;
+  height: 40px;
+  border: none;
+  font-size: 24px;
+  color: white;
+}
+
+#o {
+  background-color: rgb(28, 230, 143);
+}
+#x {
+  background-color: rgb(230, 82, 28);
+}
+
+#choice-heading {
+  letter-spacing: 1px;
+  font-size: 28px;
+  color: rgba(255, 255, 255, 0.8);
+  text-align: center;
+}
